@@ -1,0 +1,181 @@
+:root{
+    --color-azul:#001427;
+    --color-rojo:#8d0801;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 12vmin;
+    background-color:var(--color-azul);
+    & p{
+        font-weight: bolder;
+        font-size:1.5rem;
+    }
+}
+.izq{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: left;
+    padding-left: 50px;
+    gap: 45px;
+}
+.nombre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.der{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    padding-right: 180px;
+}
+.der h5{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.der p{
+    font-family: "Playwrite Australia SA";
+    font-size: 1.9rem;
+}
+.izq img{
+    border-radius: 50%;
+}
+.fondo{
+    height: 76vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pie{
+    background-color: var(--color-azul);
+    height: 12vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.pie h4{
+    font-family:"Bungee Spice";
+    color: white;
+}
+html, body{
+    height: 100vh;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+}
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.seccion-cuatro{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    display: none;
+}
+.icono{
+    background-color: rgb(57, 114, 129);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.targeta{
+    width: 80px;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+}
+.targeta.fila{
+    display: flex;
+}
+label{
+    width: 80px;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    box-shadow: 0 5px 30px royalblue;
+    transition: 0.4s ease;
+    color: rgb(0, 0, 0);
+}
+.descripcion{
+    height: 300px;
+    width: 400px;
+    opacity: 0;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.85s ease;
+}
+input:checked + label{
+    width: 400px;
+}
+input:checked + label .descripcion{
+    opacity: 1 !important;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.seccion-cinco{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendario{
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(5,2fr);
+}
+.seccion-dos{
+    background-color: var(--color-rojo);
+}
+.seccion-tres{
+    background-color: var(--color-azul);
+}
+.seccion-cuatro{
+    background-color: var(--color-rojo);
+}
+.seccion-cinco{
+    background-color: var(--color-azul);
+}
+.seccion-seis{
+    background-color: var(--color-rojo);
+}

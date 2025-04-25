@@ -22,6 +22,7 @@
         font-size:1.5rem;
     }
 }
+
 .izq{
     display: flex;
     align-items: center;
@@ -152,7 +153,7 @@ h1{
 }
 
 
-.seccion-cinco{
+#seccion-cinco{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -164,18 +165,35 @@ h1{
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(5,2fr);
 }
-.seccion-dos{
+#seccion-dos{
     background-color: var(--color-rojo);
 }
-.seccion-tres{
+#seccion-tres{
     background-color: var(--color-azul);
 }
-.seccion-cuatro{
+#seccion-cuatro{
     background-color: var(--color-rojo);
 }
-.seccion-cinco{
+#seccion-cinco{
     background-color: var(--color-azul);
 }
-.seccion-seis{
+#seccion-seis{
+    display: flex;
+    flex-direction: row;
+}
+.redes{
+    width:25vw;
     background-color: var(--color-rojo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contactos{
+    width: 75vw;
+    background-color: var(--color-azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

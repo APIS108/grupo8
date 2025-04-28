@@ -1,15 +1,19 @@
 :root{
-    --color-azul:#001427;
-    --color-rojo:#8d0801;
+    --color-azul:#003049;
+    --color-celeste:#669BBC;
+    --color-guindo:#780000;
+    --color-rojo:#c1121f;
+    --color-piel:#fdf0d5;
 }
 *{
     padding: 0;
     margin:0;
     box-sizing: border-box;
     font-family: sans-serif;
-    color: white;
+
 }
 .encabezado{
+    color: white;
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -20,6 +24,28 @@
     & p{
         font-weight: bolder;
         font-size:1.5rem;
+    }
+}
+.anclajes{
+    height: 30px;
+    background-color: var(--color-celeste);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    color: var(--color-piel);
+    & a{
+        text-decoration: none;
+        font-weight:bold;
+        color:white;
+        &:hover{
+            background-color: var(--color-azul);
+            color: var(--color-celeste);
+            padding: 2px 7px ;
+            border-radius: 10px;
+            cursor: pointer;
+        }
     }
 }
 
@@ -165,18 +191,89 @@ h1{
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(5,2fr);
 }
+#seccion-uno{
+    background-image: url(vista\ de\ abajo.jpeg);
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 #seccion-dos{
     background-color: var(--color-rojo);
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: left;
+    gap: 60px;
+    & a{
+        display: flex;
+        flex-direction:end;
+        justify-content:end;
+        margin:15px
+    }
 }
+#seccion-dos h4{
+    color: white;
+    margin: 50px;
+    font-weight: bolder;
+    font-size: 50px;
+}
+#seccion-dos .estrofas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 23px;
+    gap: 30px;
+    width: 70vmin;
+    height: 70vmin;
+    background-color:var(--color-piel);
+    border-radius: 50px;
+    color: var(--color-azul);
+    margin: 0 100px;
+    font-weight:bold;
+    & :hover{
+        color: var(--color-guindo);
+        font-weight:normal;
+    }
+}
+
+
+
+
+
+
 #seccion-tres{
     background-color: var(--color-azul);
+    & a{
+        display: flex;
+        flex-direction:end;
+        justify-content:end;
+        margin:15px
+    }
 }
 #seccion-cuatro{
     background-color: var(--color-rojo);
+    & a{
+        display: flex;
+        flex-direction:end;
+        justify-content:end;
+        margin:15px
+    }
 }
 #seccion-cinco{
     background-color: var(--color-azul);
+    & a{
+        display: flex;
+        flex-direction:end;
+        justify-content:end;
+        margin:15px
+    }
 }
+
+
+
 #seccion-seis{
     display: flex;
     flex-direction: row;
@@ -188,6 +285,24 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    & h2{
+        font-weight: bolder;
+        font-size: 50px;
+    }
+    & nav{
+        font-size: 20px;
+    }
+}
+.partners{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    & img{
+        border-radius: 30px;
+    }
 }
 .contactos{
     width: 75vw;

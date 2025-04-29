@@ -4,6 +4,7 @@
     --color-guindo:#780000;
     --color-rojo:#c1121f;
     --color-piel:#fdf0d5;
+    --color-amarillo:rgb(150, 150, 0);
 }
 *{
     padding: 0;
@@ -239,7 +240,7 @@ h1{
 #seccion-dos{
     background-color: var(--color-rojo);
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     justify-content: initial;
     align-items: left;
     gap: 60px;
@@ -250,6 +251,59 @@ h1{
         margin:15px
     }
 }
+.arriba img{
+    border-radius: 15px;
+    &:hover{
+        border: 5px solid var(--color-amarillo);
+    }
+}
+.abajo img{
+    border-radius: 15px;
+    &:hover{
+        border: 5px solid var(--color-amarillo);
+    }
+}
+.enlace{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.nuestro-colegio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    & h6{
+        margin-top: 25px;
+        font-weight: bolder;
+        font-size:1.3rem;
+        background-color:var(--color-amarillo);
+        padding:25px;
+        border-radius:10px;
+    }
+}
+.imagenes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        & .arriba{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 40px;
+        }
+        & .abajo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 40px;
+        }
+    }
 #seccion-dos h4{
     color: white;
     margin: 50px;
